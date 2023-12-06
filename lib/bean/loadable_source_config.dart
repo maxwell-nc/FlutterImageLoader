@@ -83,7 +83,7 @@ class LoadableSourceConfig {
 
     if (other is LoadableSourceConfig) {
       // key相同则相同
-      if (key == other.key) {
+      if (key != null && key == other.key) {
         return true;
       }
 
